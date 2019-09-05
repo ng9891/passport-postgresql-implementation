@@ -8,28 +8,28 @@ A '.env' file required.
 
 .env file contains:
 
-- PSQL Database name:
+- PSQL Database name:  
     ```PG_DB='dbname'```
 
-- PSQL Database user:
+- PSQL Database user:  
     ```PG_USER='username'```
 
-- PSQL Database password:
+- PSQL Database password:  
     ```PG_PW='password'```
 
-- PSQL Database IP:
+- PSQL Database IP:  
     ```PG_IP=192.168.1.1```
 
-- PSQL Port:
+- PSQL Port:  
     ```PG_PORT='pg server port'``` - eg. '5432'
 
-- Secret for web session:
+- Secret for web session:  
     ```SECRET='secret_string'```
 
-- Port for Express:
+- Port for Express:  
     ```PORT=3000```
 
-- Admin code when registering an Admin:
+- Admin code when registering an Admin:  
     ```ADMIN_CODE=123456```
 
 # To Run
