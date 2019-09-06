@@ -36,7 +36,7 @@ A '.env' file required.
 
 ```sh-session
     $ git clone https://github.com/ng9891/passport-postgre-reference.git
-    $ mkdir passport-postgre & cd passport-postgre
+    $ cd passport-postgre
     $ npm i
     $ npm start or node app.js
 ```

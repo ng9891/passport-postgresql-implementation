@@ -1,7 +1,8 @@
 const express = require("express"),
 	routes = require("./routes/routes.js"),
 	bodyParser = require("body-parser"),
-	passport = require("./passport.js");
+	passport = require("./passport.js"),
+	flash = require("connect-flash");
 
 let app = express();
 
@@ -11,10 +12,14 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 app.use(require("client-sessions")({
-	cookieName: "passAuth",
+	cookieName: "session",
 	secret: process.env.SECRET,
 	duration: 30 * 60 * 1000
 }));
+
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use("/", routes);
 
